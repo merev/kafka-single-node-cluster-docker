@@ -11,7 +11,7 @@ mkdir /home/vagrant/kafka-config
 cp /shared/kafka/docker-compose.yaml /home/vagrant/kafka-config
 
 echo "* Run the kafka cluster ..."
-docker-compose -f kafka/docker-compose.yaml up -d
+docker-compose -f kafka-config/docker-compose.yaml up -d
 
 
 
