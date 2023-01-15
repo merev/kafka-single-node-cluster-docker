@@ -8,7 +8,7 @@ pip3 install kafka-python
 
 echo "* Import the compose configurations ..."
 mkdir /home/vagrant/kafka-workdir
-cp /shared/kafka/* /home/vagrant/kafka-workdir
+cp -r /shared/kafka/* /home/vagrant/kafka-workdir
 
 echo "* Run the kafka cluster ..."
 docker-compose -f kafka-workdir/config/kafka-setup.yaml up -d
